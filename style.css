@@ -1,7 +1,29 @@
 body {
-
     font-family: Arial;
-
     text-align: center;
+}
 
+.home0,
+.home1,
+.home2,
+.home3 {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+.home0 {
+    background-color: rgb(196, 241, 255);
+}
+
+.home1 {
+    background-color: rgb(220, 255, 220);
+}
+
+.home2 {
+    background-color: rgb(255, 235, 210);
+}
+
+.home3 {
+    background-color: rgb(240, 220, 255);
 }
