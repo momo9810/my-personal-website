@@ -1,21 +1,87 @@
 body {
-    font-family: Arial;
-    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #bbbaba;
+    margin: 0;
 }
 
-.home0,
+
+/* 顶部介绍区域 */
+.home0 {
+    width: 100%;
+    padding: 100px 80px 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.welcome {
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: #666;
+}
+
+.home0 h1 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.description {
+    font-size: 20px;
+    color: #555;
+}
+
+.small-description {
+    margin-top: 30px;
+    color: #777;
+}
+
+/* 三个卡片的容器 */
+.cards {
+    width:80%;
+    margin: 20px auto;
+    display: flex;
+    gap: 30px;
+}
+/* 屏幕宽度较小时 */
+@media (max-width: 700px) {
+    .cards {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+/* 三个卡片的共同样式 */
 .home1,
 .home2,
 .home3 {
-    width: 50%;
-    margin: auto;
-    padding: 20px;
+    flex: 1;
+    padding: 30px;
+    border-radius: 16px;
+    box-sizing: border-box;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.home0 {
-    background-color: rgb(196, 241, 255);
+/* 鼠标放到卡片上时 */
+.home1:hover,
+.home2:hover,
+.home3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
+/* 三个卡片分别的颜色 */
 .home1 {
     background-color: rgb(220, 255, 220);
 }
@@ -26,4 +92,31 @@ body {
 
 .home3 {
     background-color: rgb(240, 220, 255);
+}
+
+/* 导航栏 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #feffef;
+}
+
+/* 网站名称 */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* 导航链接容器 */
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+/* 导航链接 */
+.nav-links a {
+    color: #333333;
+    text-decoration: none;
 }

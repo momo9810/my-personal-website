@@ -12,26 +12,48 @@
 
 
 <body>
+
+    <nav class="navbar">                             <!--表示网页导航区域-->
+    <div class="logo">Momo Website</div>
+
+    <div class="nav-links">
+        <a href="index.html">首页</a>                <!--<a>：链接标签，点击后可以跳转。href="index.html"：跳转到主页文件。*/-->
+        <a href="#learning">学习记录</a>
+        <a href="#games">游戏开发</a>
+        <a href="#hobbies">兴趣爱好</a>
+    </div>
+</nav>
+
   <div class="home0">
-        <h1>欢迎来到我的主页</h1>
-        <p>这里记录我的一些东西。</p>
+        <p class="welcome">WELCOME TO MY WEBSITE</p>
+
+    <h1>你好，我是 XXX</h1>
+
+    <p class="description">
+        一个正在学习编程的飞行器设计学生
+    </p>
+
+    <p class="small-description">
+        学习 · 开发 · 记录 · 分享
+    </p>
    </div>
-   
-   <div class="home1">    
-        <h2>学习记录</h2>
-        <p>记录我的学习过程，觉得有用的东西</p>
-    </div>     
-     
-    <div class="home2">     
-         <h2>游戏开发</h2>
-        <p>希望可以实现好玩的游戏</p>
-    </div>
 
-    <div class="home3">  
-        <h2>兴趣爱好</h2>
-        <p>兴趣爱好广泛且专一</p>
-    </div>
+   <div class="cards">
+    <div class="home1" id="learning">    
+            <h2>学习记录</h2>
+            <p>记录我的学习过程，觉得有用的东西</p>
+        </div>     
+        
+        <div class="home2" id="games">     
+            <h2>游戏开发</h2>
+            <p>希望可以实现好玩的游戏</p>
+        </div>
 
+        <div class="home3" id="hobbies">  
+            <h2>兴趣爱好</h2>
+            <p>兴趣爱好广泛且专一</p>
+        </div>
+   </div>
 </body>
 
 </html>
